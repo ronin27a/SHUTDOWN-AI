@@ -6,3 +6,4 @@ data]
     max_deviation = 2.0const userProperties = { isPaid: true };
 
 window.CommandBar.setUserProperties(userProperties);
+1083 ui override
