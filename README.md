@@ -8,3 +8,4 @@ data]
 window.CommandBar.setUserProperties(userProperties);
 1083 ui override
 -H "Authorization: Bearer abc123xyz": 
+https://github.com/duckduckgo/tracker-radar-collector.git
