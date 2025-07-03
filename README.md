@@ -9,3 +9,4 @@ window.CommandBar.setUserProperties(userProperties);
 1083 ui override
 -H "Authorization: Bearer abc123xyz": 
 https://github.com/duckduckgo/tracker-radar-collector.git
+https://www.ipqualityscore.com/api/json/phone/YOUR_API_KEY_HERE/USER_PHONE_HERE
