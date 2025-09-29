@@ -107,3 +107,14 @@ Plugins provide the IDE with a manifest that declares their changes and addition
     "selenium-webdriver": "3.6.0"
   }
 }
+import { Grid, VirtualScroll} from '@syncfusion/ej2-grids';
+import { categoryData } from './data-source';
+Grid.Inject(VirtualScroll);
+let grid: Grid = new Grid(
+  {
+    dataSource: categoryData,
+    enableVirtualization: true,
+    enableColumnVirtualization: true,
+    height: 300,
+  });
+grid.appendTo('#Grid');
