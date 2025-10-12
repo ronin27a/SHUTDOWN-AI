@@ -118,3 +118,49 @@ let grid: Grid = new Grid(
     height: 300,
   });
 grid.appendTo('#Grid');
+{
+  "headers": {
+    "schema": "st-schema",
+    "version": "1.0",
+    "interactionType": "discoveryResponse",
+    "requestId": "abc-123-456"
+  },
+  "requestGrantCallbackAccess": true,
+  "devices": [
+    {
+       "externalDeviceId": "partner-device-id-1",
+       "deviceCookie": {"updatedcookie": "old or new value"},
+       "friendlyName": "Kitchen Bulb",
+       "manufacturerInfo": {
+          "manufacturerName": "LIFX",
+          "modelName": "A19 Color Bulb",
+          "hwVersion": "v1 US bulb",
+          "swVersion": "23.123.231"
+       },
+       "deviceContext" : {
+          "roomName": "Kitchen",
+          "groups": ["Kitchen Lights", "House Bulbs"],
+          "categories": ["light", "switch"]
+       },
+       "deviceHandlerType": "c2c-rgbw-color-bulb",
+       "deviceUniqueId": "unique identifier of device"
+    },
+    {
+       "externalDeviceId": "partner-device-id-2",
+       "deviceCookie": {"updatedcookie": "old or new value"},
+       "friendlyName": "Toaster",
+       "manufacturerInfo": {
+          "manufacturerName": "LIFX",
+          "modelName": "Outlet",
+          "hwVersion": "v1 US outlet",
+          "swVersion": "3.03.11"
+       },
+       "deviceContext" : {
+         "roomName": "Living Room",
+         "groups": ["Hall Lights"]
+       },
+       "deviceHandlerType": "<DEVICE-PROFILE-ID>",
+       "deviceUniqueId": "unique identifier of device"
+     }
+   ]
+}
