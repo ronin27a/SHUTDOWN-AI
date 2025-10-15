@@ -183,3 +183,28 @@ Header set X-Robots-Tag "noindex, nofollow"
         <servlet-name>MyServlet</servlet-name>
         <url-pattern>/myservlet</url-pattern>
     </servlet-mapping>
+coordinator.activate().then(() => {
+  console.log('Coordinator is active');
+});
+coordinator.activate({ logLevel: LogLevel.Info }).then(() => {
+  console.log('Coordinator will be chatty');
+});
+let planets = await memory.query((q) => q.findRecords('planet').sort('name'));
+console.log('original planets', planets);
+);
+console.log('planets in fork', planets);
+```typescript
+import { RecordSchema } from '@orbit/records';
+import { MemorySource } from '@orbit/memory';
+
+// Create a schema
+const schema = new RecordSchema({
+  models: {
+    planet: {
+      attributes: {
+        name: { type: 'string' },
+        classification: { type: 'string' }
+      }
+    }
+  }
+});
